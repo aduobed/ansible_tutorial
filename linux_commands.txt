@@ -1,0 +1,44 @@
+   94  cat ansible.cfg 
+   95  ansible all -m ping
+   96  ansible all --list-host
+   97  ansible all -m gather_facts
+   98  cd ..
+   99  ls .ssh
+  100  cat .ssh/ansible.pub
+  101  ls
+  102  git clone git@github.com:aduobed/ansible_tutorial.git
+  103  ls
+  104  cd Ansible-Learn/
+  105  ls
+  106  mv ansible.cfg ~/ansible_tutorial
+  107  ls
+  108  mv inventory ~/ansible_tutorial
+  109  ls
+  110  cd ..
+  111  ls
+  112  cd ansible_tutorial/
+  113  ls
+  114  cd ..
+  115  rm -rf Ansible-Learn/
+  116  ls
+  117  cd ansible_tutorial/
+  118  git status
+  119  git add .
+  120  git status
+  121  git commit -m "added config and inventory files"
+  122  git config --global user.email "obedus10@gmail.com"
+  123  git config --global user.name "Obed Adu"
+  124  git commit -m "added config and inventory files"
+  125  git push origin main
+  126  ansible all -m apt -a update_cache=true
+  127  ansible all -m apt -a update_cache=true --become --ask-become-pass++
+  128  +
+  129  ansible all -m apt -a update_cache=true --become --ask-become-pass
+  130  ansible all -m apt -a name=vim-nox --become --ask-become-pass
+  131  ansible all -m apt -a name=tmux --become --ask-become-pass
+  132  ansible all -m apt -a name=snapd --become --ask-become-pass
+  133  ansible all -m apt -a "name=snapd state=latest" --become --ask-become-pass
+  134  ansible all -m apt -a upgrade=dist --become --ask-become-pass
+  135  history
+  136  cat history
+  137  history > linux_commands.txt
